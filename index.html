@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joseph Eboué — Portfolio</title>
+  <meta name="description" content="Portfolio de Joseph Eboué, développeur web." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="brand mono"><span>~/</span>joseph-eboue</div>
+
+      <div class="desktop-nav">
+        <button data-scroll="profil" class="nav-link mono">Profil</button>
+        <button data-scroll="parcours" class="nav-link mono">Parcours</button>
+        <button data-scroll="stack" class="nav-link mono">Compétences</button>
+        <button data-scroll="formation" class="nav-link mono">Formation</button>
+        <button data-scroll="contact" class="nav-link mono">Contact</button>
+        <div class="status-mini">
+          <span class="pulse-dot"></span>
+          <span class="mono">en poste</span>
+        </div>
+      </div>
+
+      <button class="mobile-menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">
+        <span id="menuIcon">☰</span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <button data-scroll="profil" class="mono">Profil</button>
+      <button data-scroll="parcours" class="mono">Parcours</button>
+      <button data-scroll="stack" class="mono">Compétences</button>
+      <button data-scroll="formation" class="mono">Formation</button>
+      <button data-scroll="contact" class="mono">Contact</button>
+    </div>
+  </nav>
+
+  <header id="profil" class="hero container">
+    <div class="reveal mono command">$ whoami</div>
+    <h1 class="reveal hero-title">Joseph EBOUE</h1>
+    <p class="reveal hero-role">Développeur Web</p>
+    <p class="reveal hero-text">
+      Développeur web passionné, diplômé d'un Master en Informatique, je conçois des applications robustes en donnant vie à des idées à travers un code propre et des interfaces intuitives. Deux ans d'alternance chez LCL m'ont appris à allier rigueur technique, méthodologie Agile et sens du détail — aujourd'hui, j'aime transformer des problèmes concrets en solutions numériques élégantes, du backend Java/Spring Boot au monitoring de bout en bout.
+    </p>
+
+    <div class="reveal hero-actions">
+      <a class="btn btn-primary" href="mailto:aiglon.eboue@gmail.com">
+        <span aria-hidden="true">✉</span> Me contacter
+      </a>
+      <a class="btn btn-secondary" href="https://www.linkedin.com/in/joseph-eboue/" target="_blank" rel="noopener noreferrer">
+        <span aria-hidden="true">in</span> LinkedIn
+      </a>
+    </div>
+
+    <div class="reveal status-panel">
+      <div class="status-panel-head">
+        <span class="pulse-dot"></span>
+        <span class="mono">STATUT — LCL, Ingénieur d'études et de développement</span>
+      </div>
+      <div class="status-grid">
+        <div class="stat-block">
+          <div class="mono stat-label">UPTIME (CDI)</div>
+          <div class="mono stat-value teal" id="uptime">0j 00:00:00</div>
+        </div>
+        <div class="stat-block">
+          <div class="mono stat-label">EXPÉRIENCE</div>
+          <div class="stat-value amber">~3 ans</div>
+        </div>
+        <div class="stat-block">
+          <div class="mono stat-label">STACK PRINCIPAL</div>
+          <div class="stat-value teal">Java · Spring · React</div>
+        </div>
+        <div class="stat-block">
+          <div class="mono stat-label">LOCALISATION</div>
+          <div class="stat-value amber">France entière</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="parcours" class="container section">
+      <div class="section-header reveal">
+        <div class="mono command">$ git log --graph</div>
+        <h2>Parcours professionnel</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item reveal current">
+          <div class="timeline-dot"></div>
+          <div class="exp-card">
+            <div class="exp-meta"><span class="mono hash">#a3f9c1e</span><span class="mono date">Depuis déc. 2025</span><span class="mono badge">ACTUEL</span></div>
+            <h3>Ingénieur d'études et de développement — CDI</h3>
+            <p class="company">Crédit Lyonnais (LCL), Villejuif</p>
+            <ul>
+              <li>Poursuite en CDI de la mission menée en alternance depuis le 15/12/2025</li>
+              <li>Développement de specs fonctionnelles Java 11/17 avec Spring Boot</li>
+              <li>Contribution active à la réduction de la dette technique</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="exp-card">
+            <div class="exp-meta"><span class="mono hash">#7d1b4a0</span><span class="mono date">Sept. 2023 — Sept. 2025</span></div>
+            <h3>Ingénieur d'études et de développement — Alternance</h3>
+            <p class="company">Crédit Lyonnais (LCL), Villejuif</p>
+            <ul>
+              <li>Développement de specs fonctionnelles Java (11/17) avec Spring Boot</li>
+              <li>Participation aux cérémonies Scrum</li>
+              <li>Création d'un dashboard de monitoring ELK, Grafana et Dynatrace</li>
+              <li>Tests unitaires JUnit, Clean Code et Design Patterns</li>
+              <li>Développement d'un outil de visualisation d'un catalogue de produits</li>
+              <li>Déploiements en environnements de dev, recette et production</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="exp-card">
+            <div class="exp-meta"><span class="mono hash">#2c88e6f</span><span class="mono date">Juil. 2022 — Sept. 2022</span></div>
+            <h3>Développeur Web — Stage</h3>
+            <p class="company">Cible Conseil, Cameroun</p>
+            <ul>
+              <li>Développement d'applications web en Java</li>
+              <li>Participation aux sprint meetings et daily Scrum</li>
+              <li>Participation aux réunions d'équipe et brainstormings</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="exp-card">
+            <div class="exp-meta"><span class="mono hash">#9e40d72</span><span class="mono date">Nov. 2021 — Juin 2022</span></div>
+            <h3>Technicien informatique / infographe — CDI</h3>
+            <p class="company">GIC FOAPEC, Cameroun</p>
+            <ul>
+              <li>Installation et maintenance des équipements informatiques</li>
+              <li>Mise en réseau des équipements</li>
+              <li>Services de bureautique, création de flyers et banderoles</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="exp-card">
+            <div class="exp-meta"><span class="mono hash">#5b17a33</span><span class="mono date">Juil. 2021 — Sept. 2021</span></div>
+            <h3>Développeur Web — Stage</h3>
+            <p class="company">Cible Conseil, Cameroun</p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="exp-card">
+            <div class="exp-meta"><span class="mono hash">#10f4c8b</span><span class="mono date">Juil. 2020 — Sept. 2020</span></div>
+            <h3>Développeur d'application — Stage</h3>
+            <p class="company">ISS, Douala, Cameroun</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="stack" class="container section">
+      <div class="section-header reveal">
+        <div class="mono command">$ cat skills.json</div>
+        <h2>Compétences techniques</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal"><div class="mono skill-title amber">LANGAGES</div><div class="chips"><span>Java 11/17/21</span><span>HTML/CSS/JS</span><span>SQL</span><span>PHP</span><span>Python</span></div></div>
+        <div class="skill-card reveal"><div class="mono skill-title teal">FRAMEWORKS</div><div class="chips"><span>Spring</span><span>React JS</span><span>Angular</span></div></div>
+        <div class="skill-card reveal"><div class="mono skill-title amber">ARCHITECTURE</div><div class="chips"><span>Microservices</span></div></div>
+        <div class="skill-card reveal"><div class="mono skill-title teal">DEVOPS</div><div class="chips"><span>Docker</span><span>K8s</span><span>GitLab CI</span><span>Jenkins</span><span>Ansible</span><span>ArgoCD</span><span>Alfred</span></div></div>
+        <div class="skill-card reveal"><div class="mono skill-title teal">OBSERVABILITÉ</div><div class="chips"><span>Dynatrace</span><span>ELK</span><span>Grafana</span><span>Prometheus</span></div></div>
+        <div class="skill-card reveal"><div class="mono skill-title amber">MÉTHODOLOGIE</div><div class="chips"><span>Agile</span><span>Scrum</span><span>TDD</span><span>Clean Code</span><span>Vibe coding</span></div></div>
+        <div class="skill-card reveal"><div class="mono skill-title amber">OUTILS</div><div class="chips"><span>JIRA</span><span>IntelliJ</span><span>Dbeaver</span><span>SonarQube</span><span>JMeter</span></div></div>
+        <div class="skill-card reveal"><div class="mono skill-title teal">SYSTÈME & SERVEUR</div><div class="chips"><span>Linux</span><span>Windows</span><span>Apache</span><span>Tomcat</span></div></div>
+      </div>
+    </section>
+
+    <section id="formation" class="container section">
+      <div class="section-header reveal">
+        <div class="mono command">$ ls ./education</div>
+        <h2>Formation</h2>
+      </div>
+
+      <div class="education-list">
+        <div class="education-item reveal"><div><p>Master développement logiciel & IoT</p><span>H3 HITEMA — Paris, France</span></div><time class="mono">Sept. 2023 — Août 2025</time></div>
+        <div class="education-item reveal"><div><p>3ᵉ année Système Informatique, DevOps</p><span>ECOLE-IT — Orléans, France</span></div><time class="mono">Oct. 2022 — Juil. 2023</time></div>
+        <div class="education-item reveal"><div><p>Licence professionnelle en développement logiciel</p><span>Institut Universitaire et Stratégique de l'Estuaire — Cameroun</span></div><time class="mono">Oct. 2021 — Juin 2022</time></div>
+        <div class="education-item reveal"><div><p>BTS en développement logiciel</p><span>Institut Universitaire de la Côte — Cameroun</span></div><time class="mono">Oct. 2019 — Juin 2021</time></div>
+        <div class="education-item reveal"><div><p>Formation CCNA Routing & Switching</p><span>IMIT — Cameroun</span></div><time class="mono">Oct. 2018 — Juin 2019</time></div>
+      </div>
+
+      <div class="extra-info reveal">
+        <div>
+          <div class="mono extra-title teal">LANGUES</div>
+          <p>Français — Maternelle</p>
+          <p>Anglais — Bilingue</p>
+        </div>
+        <div>
+          <div class="mono extra-title amber">CENTRES D'INTÉRÊT</div>
+          <p>Cinéma · Sport · Piano · Guitare</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container section contact-section">
+      <div class="section-header reveal">
+        <div class="mono command">$ mailto</div>
+        <h2>Contact</h2>
+      </div>
+
+      <div class="contact-card reveal">
+        <p class="mono terminal-line"><span>joseph@dev</span>:~$ contact --info</p>
+        <div class="contact-grid">
+          <a class="contact-row" href="mailto:aiglon.eboue@gmail.com"><span class="contact-icon">✉</span><div><small>Email</small><p>aiglon.eboue@gmail.com</p></div></a>
+          <a class="contact-row" href="tel:0650135354"><span class="contact-icon">☎</span><div><small>Téléphone</small><p>06 50 13 53 54</p></div></a>
+          <div class="contact-row"><span class="contact-icon">⌖</span><div><small>Localisation</small><p>France entière</p></div></div>
+          <a class="contact-row" href="https://www.linkedin.com/in/joseph-eboue/" target="_blank" rel="noopener noreferrer"><span class="contact-icon">in</span><div><small>LinkedIn</small><p>joseph-eboue ↗</p></div></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="mono">© 2026 Joseph Eboué — build compilé avec soin.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
